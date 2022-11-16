@@ -4,6 +4,8 @@ import Menu from './components/MenuComponent';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import './App.css';
 import { DISHES } from './shared/dishes';
+import { BrowserRouter } from 'react-router-dom';
+
 
 class App extends Component {
   constructor(props) {
@@ -12,6 +14,15 @@ class App extends Component {
       dishes: DISHES
     };
   }
+
+  
+  <BrowserRouter>
+  <div className="App">
+    <Main />
+  </div>
+</BrowserRouter>
+
+
   render() {
     return (
       <div>
